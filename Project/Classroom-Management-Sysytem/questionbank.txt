@@ -1,0 +1,15 @@
+					MCQ'S
+
+
+Question1: What is the function's purpose in programming? a)carry out activity b)store data in a database c)software systems to connect with one another d)define
+Question2: In programming, what is the function of a while loop? a) Repetition of code b) Execution of code c)function that can be called later d)Variable
+					TRUE/FALSE
+
+
+Question1: Penguins have the ability to fly.                                  (T/F)
+Question2: The giraffe is the tallest animal.                                 (T/F)
+					SUBJECTIVE
+
+
+Question1:  Implement a Java program to find the median of an array of numbers.
+Question2:  Create a C++ program to check if a given string is a palindrome or not.

@@ -1,0 +1,1149 @@
+
+Student Name: Tashfeen
+Assignment Title    : Object Oriented Programming
+Submission Time     :     1210
+Submission Text     : #include <iostream>
+using namespace std;
+
+double power(double base, int exponent) {
+    // Base case: When the exponent is 0, any number raised to 0 is 1.
+    if (exponent == 0) {
+        return 1.0;
+    }
+    
+    // Recursive case: Calculate the power recursively using the formula:
+    // base^exponent = base * base^(exponent - 1)
+    // Here, we call the power function with (base, exponent - 1) to get the
+    // power of base^(exponent - 1).
+    return base * power(base, exponent - 1);
+}
+
+int main() {
+    double base;
+    int exponent;
+
+    cout << "Enter the base number: ";
+    cin >> base;
+
+    cout << "Enter the exponent: ";
+    cin >> exponent;
+
+    double result = power(base, exponent);
+    cout << base << "^" << exponent << " = " << result << endl;
+
+    return 0;
+}
+
+
+
+
+
+Student Name        : Laiba
+Assignment Title    : Object oriented Programming
+Submission Time     : 2010
+Submission Text     : #include <iostream>
+using namespace std;
+
+
+
+#include <iostream>
+#include <cmath>
+
+bool is_prime(int number) {
+    if (number < 2) {
+        return false;
+    }
+    for (int i = 2; i <= sqrt(number); ++i) {
+        if (number % i == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+void find_primes_in_range(int start, int end) {
+    std::cout << "Prime numbers between " << start << " and " << end << ": ";
+    for (int num = start; num <= end; ++num) {
+        if (is_prime(num)) {
+            std::cout << num << " ";
+        }
+    }
+    std::cout << std::endl;
+}
+
+int main() {
+    int start_range = 1;
+    int end_range = 50;
+    find_primes_in_range(start_range, end_range);
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+Student Name        : Shubu
+Assignment Title    : Python Data
+Submission Time     : 1555
+Submission Text     : #include <iostream>
+using namespace std;
+
+      
+       #include<iostream>
+using namespace std;
+int main()
+{
+	int n;
+	int i = 1;
+	int j;
+	cout << "Enter any number: ";
+	cin >> n;
+	do                       //i=1 j=1
+	{
+		j = 1;
+		do                  // DRY RUN
+		{
+			cout << "*";
+			j++;
+		} while (j <= i);
+		//for upper left spaces
+		j = 1;
+		if (i <= n-1)
+		{
+			do
+			{
+				cout << "s";
+				j++;
+			} while (j <= n - i);
+
+			//for upper right spaces
+			j = 1;
+			do
+			{
+				cout << "s";
+				j++;
+			} while (j <= n - i);
+		}
+		//UPPER RIGHT TRIANGLE
+		j = 1;
+		do 
+		{
+			cout << "*";
+			j++;
+			
+		} while (j <= i);
+		cout << endl;
+		i++;
+	} while (i <= n);
+	//lower left triangle
+	int k = n - 1, l;
+	do
+	{
+		l = 1;
+		do
+		{
+			cout << "*";
+			l++;
+		} while (l <= k);
+		l = 1;
+	
+		do
+		{
+			cout << "s";
+			l++;
+		} 
+		while (l<=n-k);
+		l = 1;
+		do
+		{
+			cout << "s";
+			l++;
+		} while (l <= n - k);
+		l = 1;
+		do
+		{
+			cout << "*";
+			l++;
+		} while (l <= k);
+
+		cout << endl;
+		k--;
+	} while (k >= 1);
+
+	//PART B
+	int p = 1;
+	int q;
+	do
+	{
+		q = 1;
+		cout << "*";
+		if (p < n)
+		{
+
+			do
+			{
+				q++;
+				cout << "s";
+			} while (q <= n - 2);
+		}
+		if (p == 5)
+		{
+			q = 1;
+			do 
+			{
+
+				cout << "*";
+				q++;
+			} while (q<=2*n-1);
+			cout << endl;
+		}
+		
+		
+		p++;
+		cout << endl;
+	} while (p<=n);
+
+
+
+
+}
+
+
+
+
+Student Name        : Aaimlik
+Assignment Title    : Python Data
+Submission Time     : 2041
+Submission Text     : #include <iostream>
+using namespace std;
+
+      
+
+int main()
+{
+	//Declaring variables
+	int ID;
+	int password;
+    int enter_password;
+	string role;
+	//Taking id as input from the user
+	cout << "Enter your ID";
+	cin >> ID
+	//Storing separate password for each IDs
+    switch (ID)
+    {
+    case 100:
+        password = 10220;
+        break;
+    case 101:
+        password = 16010;
+        break;
+    case 102:
+        password = 11002;
+        break;
+    case 103:
+        password = 22342;
+        break;
+    case 104:
+        password = 44323;
+        break;
+    case 105:
+        password = 33354;
+        break;
+    case 106:
+        password = 87685;
+        break;
+    case 107:
+        password = 99089;
+        break;
+    case 108:
+        password = 34562;
+        break;
+    case 109:
+        password = 44255;
+        break;
+    case 110:
+        password = 32415;
+        break;
+    case 111:
+        password = 90784;
+        break;
+    case 112:
+        password = 78685;
+        break;
+    case 113:
+        password = 44255;
+        break;
+    case 114:
+        password = 81973;
+        break;
+    default:
+        password = 0;
+        break;
+    }
+    // Matching passwords for each id using switch again
+    switch (ID)
+    {
+    case 100:
+        role = " student ";
+        cout << "Dear" << role << "please enter your password: " << endl;
+        cin >> enter_password;
+        switch ((enter_password == password))
+        {
+        	//displaying an appropiate message respectively using nested switch!
+        case 1:
+            cout << "Congrats" << role << "! you have entered a correct password\n";
+            break;
+        default:
+            cout << "You have entered an incorrect value.\n";
+            break;
+        }
+        break;
+    
+    case 101:
+        role = " student ";
+        cout << "Dear" << role << "please enter your password: " << endl;
+        cin >> enter_password;
+        switch (enter_password == password)
+        {
+        case 1:
+            cout << "Congrats" << role << "! you have entered a correct password\n";
+            break;
+        default:
+            cout << "You have entered an incorrect value.\n";
+            break;
+        }
+        break;
+
+    case 102:
+        role = " student ";
+        cout << "Dear" << role << "please enter your password: " << endl;
+        cin >> enter_password;
+        switch ((enter_password == password))
+        {
+        case 1:
+            cout << "Congrats" << role << "! you have entered a correct password\n";
+            break;
+        default:
+            cout << "You have entered an incorrect value.\n";
+            break;
+        }
+        break;
+    case 103:
+        role = " student ";
+        cout << "Dear" << role << "please enter your password: " << endl;
+        cin >> enter_password;
+        switch ((enter_password == password))
+        {
+        case 1:
+            cout << "Congrats" << role << "! you have entered a correct password\n";
+            break;
+        default:
+            cout << "You have entered an incorrect value.\n";
+            break;
+        }
+        break;
+    case 104:
+        role = " student ";
+        cout << "Dear" << role << "please enter your password: " << endl;
+        cin >> enter_password;
+        switch ((enter_password == password))
+        {
+        case 1:
+            cout << "Congrats" << role << "! you have entered a correct password\n";
+            break;
+        default:
+            cout << "You have entered an incorrect value.\n";
+            break;
+        }
+        break;
+    case 105:
+        role = " student ";
+        cout << "Dear" << role << "please enter your password: " << endl;
+        cin >> enter_password;
+        switch ((enter_password == password))
+        {
+        case 1:
+            cout << "Congrats" << role << "! you have entered a correct password\n";
+            break;
+        default:
+            cout << "You have entered an incorrect value.\n";
+            break;
+        }
+        break;
+        case 106:
+            role = " student ";
+            cout << "Dear" << role << "please enter your password: " << endl;
+            cin >> enter_password;
+            switch ((enter_password == password))
+            {
+            case 1:
+                cout << "Congrats" << role << "! you have entered a correct password\n";
+                break;
+            default:
+                cout << "You have entered an incorrect value.\n";
+                break;
+            }
+            break;
+        case 107:
+            role = " student ";
+            cout << "Dear" << role << "please enter your password: " << endl;
+            cin >> enter_password;
+            switch((enter_password == password))
+            {
+            case 1:
+                cout << "Congrats" << role << "! you have entered a correct password\n";
+                break;
+            default:
+                cout << "You have entered an incorrect value.\n";
+                break;
+            }
+
+            break;
+        case 108:
+            role = " student ";
+            cout << "Dear" << role << "please enter your password: " << endl;
+            cin >> enter_password;
+            switch ((enter_password == password))
+            {
+            case 1:
+                cout << "Congrats" << role << "! you have entered a correct password\n";
+                break;
+            default:
+                cout << "You have entered an incorrect value.\n";
+                break;
+            }
+            break;
+        case 109:
+            role = " student ";
+            cout << "Dear" << role << "please enter your password: " << endl;
+            cin >> enter_password;
+            switch ((enter_password == password))
+            {
+            case 1:
+                cout << "Congrats" << role << "! you have entered a correct password\n";
+                break;
+            default:
+                cout << "You have entered an incorrect value.\n";
+                break;
+            }
+            break;
+        case 110:
+
+            role = " teacher ";
+            cout << "Dear" << role << "please enter your password: " << endl;
+            cin >> enter_password;
+            switch ((enter_password == password))
+            {
+            case 1:
+                cout << "Congrats" << role << "! you have entered a correct password\n";
+                break;
+            default:
+                cout << "You have entered an incorrect value.\n";
+                break;
+            }
+            break;
+        case 111:
+            role = " teacher ";
+            cout << "Dear" << role << "please enter your password: " << endl;
+            cin >> enter_password;
+            switch ((enter_password == password))
+            {
+            case 1:
+                cout << "Congrats" << role << "! you have entered a correct password\n";
+                break;
+            default:
+                cout << "You have entered an incorrect value.\n";
+                break;
+            }
+            break;
+        case 112:
+            role = " teacher ";
+            cout << "Dear" << role << "please enter your password: " << endl;
+            cin >> enter_password;
+            switch ((enter_password == password))
+            {
+            case 1:
+                cout << "Congrats" << role << "! you have entered a correct password\n";
+                break;
+            default:
+                cout << "You have entered an incorrect value.\n";
+                break;
+            }
+            break;
+        case 113:
+            role = " IT Staff ";
+            cout << "Dear" << role << "please enter your password: " << endl;
+            cin >> enter_password;
+            switch ((enter_password == password))
+            {
+            case 1:
+                cout << "Congrats" << role << "! you have entered a correct password\n";
+                break;
+            default:
+                cout << "You have entered an incorrect value.\n";
+                break;
+            }
+            break;
+        case 114:
+            role = " IT Staff ";
+            cout << "Dear" << role << "please enter your password: " << endl;
+            cin >> enter_password;
+            switch ((enter_password == password))
+            {
+            case 1:
+                cout << "Congrats" << role << "! you have entered a correct password\n";
+                break;
+            default:
+                cout << "You have entered an incorrect value.\n";
+                break;
+            }
+       break;
+       // Displaying an appropriate message if the entered ID is incorrect!
+       default:
+       cout << "Incorrect ID";
+       break;
+     
+    }
+
+	return 0;
+}
+
+
+
+
+
+
+Student Name        : Sarmad
+Assignment Title    : Java
+Submission Time     : 823
+Submission Text     : #include <iostream>
+using namespace std;
+
+
+
+int main()
+{
+	float percentage;
+	int count_on=0;
+	int count_off=0;
+	int sensor_grid[6][6];
+	cout<<"ENTER THE SENSOR GRID DATA:\n";
+	
+
+
+		for (int i = 0; i < 6; i++)
+		{
+				for (int j = 0; j < 6; j++)
+				{
+					cout << "Enter the value of the sensor" << endl;
+
+
+				}
+			cout << endl;
+		}
+
+
+	for (int i = 0; i < 6; i++)
+	{
+		for (int j = 0; j < 6; j++)
+		{
+			cout<< sensor_grid[i][j]<<" ";
+		}
+		cout << endl;
+	}
+
+	for (int i = 0; i < 6; i++)
+	{
+		for (int j = 0; j < 6; j++)
+		{
+			if (sensor_grid[i][j] == 0)
+			{
+				sensor_grid[i][j] == '46';
+				count_off++;
+			}
+			if (sensor_grid[i][j] == 1)
+			{
+				sensor_grid[i][j] == '88';
+				count_on++;
+			}
+		}
+		cout << endl;
+	}
+
+	cout << "SENSOR GRID:\n";
+
+	for (int i = 0; i < 6; i++)
+	{
+		for (int j = 0; j < 6; j++)
+		{
+			cout << sensor_grid[i][j] << " ";
+		}
+		cout << endl;
+	}
+	percentage=count_on/count_off;
+	cout<< percentage;
+	return 0;
+}
+
+ 
+
+
+Student Name        : Abyaz
+Assignment Title    : Java
+Submission Time     : 211
+Submission Text     : #include <iostream>
+using namespace std;
+
+int main()
+{
+	char pack;
+	float data_used;
+	float off_net_minutes;
+	float on_net_minutes;
+	int mbs;
+	int additional_mbs;
+	int over_charges;
+	float data_bill=0;
+	float off_net_bill=0;
+	float on_net_bill=0;
+	float off_net_additional=0;
+	float on_net_additional=0;
+	float total_amount_due=0;
+	cout << "How many GBs data have you used ? ";
+	cin >> data_used;
+	cout << "How many call (OFF-NET) minutes have you used ?";
+	cin >> off_net_minutes;
+	cout << "How many call (ON-NET) minutes have you used ?";
+	cin >> on_net_minutes;
+	cout << "Which pack have you subscribed ?\n A \n B \n C \n D \n";
+	cin >> pack;
+	
+	switch (pack)
+	{
+	case 'A':case'a':
+	{
+		if (data_used > 1)
+		{
+			mbs = data_used * 1024;
+			additional_mbs = (mbs - 1024);
+			over_charges = additional_mbs / 100;
+			data_bill = over_charges * 20;
+		}
+		if (off_net_minutes > 100)
+		{
+			off_net_additional = off_net_minutes - 100;
+			off_net_bill = off_net_additional * 3.75;
+		}
+		if (on_net_minutes > 200)
+		{
+			on_net_additional = on_net_minutes - 200;
+			on_net_bill = on_net_additional * 2.25;
+		}
+		total_amount_due = on_net_bill + off_net_bill + data_bill + 100 + 500;
+		cout << "Your total amount due is: Rs" << total_amount_due << "\-";
+		break;
+	}
+		case 'B':case'b':
+		{
+			if (data_used > 5)
+			{
+				mbs = data_used * 1024;
+				additional_mbs = (mbs - 5120);
+				over_charges = additional_mbs / 100;
+				data_bill = over_charges * 15;
+			}
+			if (off_net_minutes > 250)
+			{
+				off_net_additional = off_net_minutes - 250;
+				off_net_bill = off_net_additional * 3.25;
+			}
+			if (on_net_minutes > 350)
+			{
+				on_net_additional = on_net_minutes - 350;
+				on_net_bill = on_net_additional * 2.25;
+			}
+
+			//total_amount_due = on_net_bill + off_net_bill + data_bill + 100 + 500;
+			//cout << "Your total amount due is: Rs" << total_amount_due << "\-";
+			total_amount_due = on_net_bill + off_net_bill + data_bill + 800 + 350;
+			cout << "Your total amount due is: Rs " << total_amount_due << "\-";
+			break;
+		}
+		case 'C':case'c':
+		{
+			if (data_used > 7)
+			{
+				mbs = data_used * 1024;
+				additional_mbs = (mbs - 7168);
+				over_charges = additional_mbs / 100;
+				data_bill = over_charges * 13;
+			}
+			if (off_net_minutes > 350)
+			{
+				off_net_additional = off_net_minutes - 350;
+				off_net_bill = off_net_additional * 2.75;
+			}
+			if (on_net_minutes > 300)
+			{
+				on_net_additional = on_net_minutes - 300;
+				on_net_bill = on_net_additional * 1.75;
+			}
+			total_amount_due = on_net_bill + off_net_bill + data_bill + 1000 + 500;
+			cout << "Your total amount due is: Rs" << total_amount_due << "\-";
+			break;
+		}
+		case 'D':case'd':
+		{
+			if (data_used > 50)
+			{
+				mbs = data_used * 1024;
+				additional_mbs = (mbs - 51200);
+				over_charges = additional_mbs / 100;
+				data_bill = over_charges * 10;
+			}
+			if (off_net_minutes > 750)
+			{
+				off_net_additional = off_net_minutes - 750;
+				off_net_bill = off_net_additional * 1.50;
+			}
+			if (on_net_minutes > 1000)
+			{
+				on_net_additional = on_net_minutes - 1000;
+				on_net_bill = on_net_additional;
+			}
+			total_amount_due = on_net_bill + off_net_bill + data_bill + 1000 + 1500;
+			cout << "Your total amount due is: Rs" << total_amount_due << "\-";
+			break;
+		}
+	}
+
+	// PART B
+	if (pack == 'A' || pack == 'a')
+	{
+	   
+	}
+	return 0;
+}
+
+
+
+
+
+Student Name        : Saim
+Assignment Title    : Programming Fundamentals
+Submission Time     : 31
+Submission Text     : #include <iostream>
+#include<cstdlib>
+#include<cstring>
+#include<cmath>
+#include <cctype>
+using namespace std;
+int main()
+{
+	char arr[20];
+	int length;
+	int	count_upper = 0;
+	int count_lower = 0;
+	int a_vowel_count=0;
+	int u_vowel_count = 0;
+	int e_vowel_count = 0;
+	int i_vowel_count = 0;
+	int o_vowel_count = 0;
+	cout << "Enter a sentence: ";
+	cin.getline(arr, 20);
+	cout << arr << endl;
+	length = strlen(arr);
+	for (int i = 0; i < length; i++)
+	{
+		if (isupper(arr[i]))
+		{
+			count_upper++;
+		}
+		else
+		{
+			count_lower++;
+		}
+		if (arr[i] == 'a' || arr[i] == 'A')
+		{
+			a_vowel_count++;
+		}
+		else if (arr[i] == 'e' || arr[i] == 'E')
+		{
+			e_vowel_count++;
+		}
+		else if (arr[i] == 'i' || arr[i] == 'I')
+		{
+			i_vowel_count++;
+		}
+		else if (arr[i] == 'o' || arr[i] == 'O')
+		{
+			o_vowel_count++;
+		}
+		else if (arr[i] == 'u' || arr[i] == 'U')
+		{
+			u_vowel_count++;
+		}
+		
+	}
+	for (int i = 0; i < length; i++)
+	{
+		if (arr[i] == ' ')
+		{
+			arr[i + 1] = toupper(i + 1);
+		}
+	}
+
+		cout << arr;
+	
+	cout << "The upper case letters in the given sentence are: " << count_upper << endl;
+	cout << "The lower case letters in the given sentence are: " << count_lower << endl;
+	cout << "The vowel case A letters in the given sentence are: " << a_vowel_count << endl;
+	cout << "The vowel case E letters in the given sentence are: " << e_vowel_count << endl;
+	cout << "The vowel case I letters in the given sentence are: " << i_vowel_count << endl;
+	cout << "The vowel case O letters in the given sentence are: " << o_vowel_count << endl;
+	cout << "The vowel case U letters in the given sentence are: " << u_vowel_count << endl;
+
+	return 0;
+}
+
+
+
+
+Student Name        : Zarmeena
+Assignment Title    : Programming Fundamentals
+Submission Time     : 12323
+Submission Text     : #include <iostream>
+using namespace std;
+
+int main()
+{
+	float percentage1;
+	float percentage2;
+	int question;
+	int option;
+	int scholarship;
+	int subj_chosen;
+	float a, b,c,d;
+	float  percentage_1;
+	float percentage_2;
+	float add_math_percentage;
+	float weightage_calculation_1;
+	float level_weightage_1;
+	float weightage_calculation_2;
+	float level_weightage_2;
+	float academic_weightage;
+	float Adm_test_req_percentage;
+	int test_marks_required;
+	bool blood_relations=false;
+	bool maternal_cousin=false;
+	bool paternal_cousin=false;
+	char sibs;
+	char alumnus;
+	char cznz;
+	float e,f;
+	int test_weightage;
+	int test_marks;
+	int preferred_degree;
+	int merit;
+	bool add_math = false;
+	cout<< "What do you want to enquire about eligibility of admissions ? \n";
+	cout << "[1]Is a persin eligible to apply for FAST - NUCES ?\n";
+	cout << "[2]Is there any scholarship offered by the university?\n";
+	cin >>question;
+	if (question == 1 || question == 2)
+	{
+		if (question == 1)
+		{
+			cout << "Which educational system was opted? \n";
+			cout << "[1] O/A Levels.\n";
+			cout << "[2] Matric/FSc.\n";
+			cin >> option;
+
+			if (option == 1)
+			{
+				cout << "Enter the O levels percentage: \n";
+				cin >> percentage1;
+				cout << "Enter the A levels percentage: \n";
+				cin >> percentage2;
+
+			}
+			else
+			{
+				cout << "Enter the Matric percentage: \n";
+				cin >> percentage1;
+				cout << "Enter the FSc percentage: \n";
+				cin >> percentage2;
+			}
+			cout << "Enter your subjects chosen: \n";
+			cout << "[1]Pre -Medical\n";
+			cout << "[2]Pre -Engineering\n";
+			cin >> subj_chosen;
+			if (subj_chosen == 1)
+			{
+				cout << "Enter you Add_Maths percentage:\n";
+				cin >> add_math_percentage;
+				if (add_math_percentage >= 50)
+				{
+				 			
+		
+						a = (percentage1 / 100.0);
+						b = (15.0 / 100.0);
+						weightage_calculation_1 =a *b ;
+					    level_weightage_1= weightage_calculation_1 * 100.0;
+						cout << level_weightage_1 << endl;
+						c = (percentage2 / 100.0);
+						d = (35.0 / 100.0);
+						weightage_calculation_2 = c * d;
+					    level_weightage_2 = weightage_calculation_2 * 100.0;
+						cout << level_weightage_2;
+						academic_weightage = level_weightage_1 + level_weightage_2;
+						Adm_test_req_percentage = 75 -	academic_weightage ;
+						test_marks_required = 250 * Adm_test_req_percentage / 50;
+						cout << "The student needs " << Adm_test_req_percentage << " % score in the admission test to be eligible\n";
+						cout << "The student needs " << test_marks_required << " marks in the admission test to be eligible\n";
+				}
+				else
+				{
+					cout << " Student is not eligible for FAST_NUCES\n";
+					return 0;
+				}
+			}
+			else if (subj_chosen == 2) {
+				a = (percentage1 / 100.0);
+				b = (15.0 / 100.0);
+				weightage_calculation_1 = a * b;
+				level_weightage_1 = weightage_calculation_1 * 100.0;
+				cout << level_weightage_1 << endl;
+				c = (percentage2 / 100.0);
+				d = (35.0/ 100.0);
+				weightage_calculation_2 = c * d;
+				level_weightage_2 = weightage_calculation_2 * 100.0;
+				cout << level_weightage_2;
+				academic_weightage = level_weightage_1 + level_weightage_2;
+				Adm_test_req_percentage = 75 - academic_weightage;
+				test_marks_required = 250 * Adm_test_req_percentage / 50;
+				cout << "The student needs " << Adm_test_req_percentage << " % score in the admission test to be eligible\n";
+				cout << "The student needs " << test_marks_required << " marks in the admission test to be eligible\n";
+			}
+            cout<<endl;
+			cout << "ENTER YOUR PREFERRED DEGREE PROGRAM:\n"<< endl;
+			cout << " _____________________________________\n";
+			cout << "|[1]|BS SOFTWARE ENGINEERING      |79%|\n";
+			cout << "|[2]|BS COMPUTER SCIENCES         |80%|\n";
+			cout << "|[3]|BS ARTIFICIAL INTELLIGENCE   |75%|\n";
+			cout << "|[4]|BS DATA SCIENCES             |76%|\n";
+			cout << "|[5]|BS  CYBER SECURITY           |77%|\n";
+			cout << "|[6]|BS ELECTRICAL ENGINEERING    |76%|\n";
+            cout << "|___|_____________________________|___|\n";
+			cin >> preferred_degree;
+			switch (preferred_degree)
+			{
+			case 1:
+				merit = 79;
+				test_weightage = merit - academic_weightage;
+				test_marks = 250 * test_weightage / 50;
+				cout << "The test score you need for the BS SOFTWARE ENGINEERING " << test_marks <<" out of 250\n";
+				break;
+			case 2:
+
+				merit = 80;
+				test_weightage = merit - academic_weightage;
+				test_marks = 250 * test_weightage / 50;
+				cout << "The test score you need for the BS COMPUTER SCIENCES " << test_marks << " out of 250\n";
+				break;
+			case 3:
+				
+				merit = 75;
+				test_weightage = merit - academic_weightage;
+				test_marks = 250 * test_weightage / 50;
+				cout << "The test score you need for the BS ARTIFICIAL INTELLIGENCE is " << test_marks << " out of 250\n";
+				break;
+			case 4:
+
+				merit = 76;
+				test_weightage = merit - academic_weightage;
+				test_marks = 250 * test_weightage / 50;
+				cout << "The test score you need for the BS DATA SCIENCES is " << test_marks << " out of 250\n";
+				break;
+			case 5:
+
+				merit = 77;
+				test_weightage = merit - academic_weightage;
+				test_marks = 250 * test_weightage / 50;
+				cout << "The test score you need for the BS  CYBER SECURITY is " << test_marks << " out of 250\n";
+				break;
+			case 6:
+
+				merit = 76;
+				test_weightage = merit - academic_weightage;
+				test_marks = 250 * test_weightage / 50;
+				cout << "The test score you need for the BS ELECTRICAL ENGINEERING is " << test_marks << " out of 250\n";
+				break;
+			default:
+				cout << "DEGREE NOT AVAILABLE!";
+			}
+		}
+		else //PART 2
+		{
+			cout << "Which educational system was opted? \n";
+			cout << "[1] O/A Levels.\n";
+			cout << "[2] Matric/FSc.\n";
+			cout << "[3] Is FAST, nuces Alumnus in Family?\n";
+			cin >> option;
+			if (option == 1)
+			{  
+					cout << "Enter the O levels percentage: \n";
+					cin >> percentage_1;
+					cout << "Enter the A levels percentage: \n";
+					cin >> percentage_2;
+			}
+			else 
+			{
+				if (option == 2) {
+					cout << "Enter the Matric percentage: \n";
+					cin >> percentage_1;
+					cout << "Enter the FSc percentage: \n";
+					cin >> percentage_2;
+				}
+			}
+			
+			cout << " _____________________________________\n";
+			cout << "|O-LEVELS          |90% above   |10%  |\n";
+			cout << "|A-LEVELS          |90% above   |30%  |\n";
+			cout << "|MATRIC            |90% above   |10%  |\n";
+			cout << "|FSc               |90% above   |30%  |\n";
+			cout << "|BLOOD RELATION    |            |20%  |\n|(siblings, parents)                  |\n";
+			cout << "|MATERNAL OR       |            |10%  |\n|PATERNAL COUSINS                     |\n";
+		    cout << "|__________________|____________|_____|\n";
+		    cout<<"\n\n";
+		    cout << "Do you have any alumus studying in FAST ?\n Press Y for yes and Press N for no.\n\n";
+			cin >> alumnus;
+			if(percentage_2 >= 90)
+			{
+				scholarship=30;
+		    	cout << "Congrats! You are eligible for the scholarship!" << endl;
+		    	cout<<"  You are awarded with "<<scholarship<<"% scholarship!\n";
+			}
+			else
+			{
+				cout<<"Are they your siblings? (Y or N)\n\n";
+				cin>>sibs;
+			if (sibs == 'y' || sibs == 'Y')
+			{
+				 	scholarship=20;
+				 	cout << "Congrats! You are eligible for the scholarship!\n" << endl;
+			}
+			else{
+				cout<<"Are they your maternal or paternal cousins?(Y or N)\n\n";
+				cin>>cznz;
+				if (percentage_1 >= 90|| cznz == 'y' || cznz == 'Y')
+			     {
+			       cout << "Congrats! You are eligible for the scholarship!\n" << endl;
+				   scholarship=10;
+			     }
+		    	}
+		    		cout<<"You are awarded with "<<scholarship<<"% scholarship!\n\n";
+		    		
+		    }
+		    
+		}
+		
+	}
+	return 0; 
+}
+
+
+
+
+
+
+
+Student Name        : Danish
+Assignment Title    : Data Structures
+Submission Time     : 2321
+Submission Text     : #include <iostream>
+using namespace std;
+
+
+int main()
+{
+    double x, term, result = 1.0;
+    int n, sign = -1, fact = 2;
+
+    cout << "Enter the value of x (in radians): ";
+    cin >> x;
+
+    for (n = 1; n <= 10; n++)
+    {
+        fact = (2*n-1)*(2*n);
+        term = sign * pow(x, 2*n) / fact; 
+        result += term; 
+        sign *= -1; 
+    }
+
+    cout << "cos(" << x << ") = " << result << endl;
+
+    return 0;
+}
+
+
+
+
+Student Name        : Afnan
+Assignment Title    : Data Structures
+Submission Time     : 1721
+Submission Text     : #include <iostream>
+using namespace std;
+int main()
+{
+	int store1;
+	int store2;
+	int store3;
+	int store4;
+	int store5;
+	cout << "Enter today's sales for store 1 :";
+	cin >> store1;
+	cout << "Enter today's sales for store 2 :";
+	cin >> store2;
+	cout << "Enter today's sales for store 3 :";
+	cin >> store3;
+	cout << "Enter today's sales for store 4 :";
+	cin >> store4;
+	cout << "Enter today's sales for store 5 :";
+	cin >> store5;
+	for (int i = 1; i<store1 / 50; i++)
+	 {
+		cout << "*";
+	 }
+	cout << endl;
+	for (int i = 1; i < store2 / 50; i++)
+	{
+		cout << "*";
+	}
+	cout << endl;
+	for (int i = 1; i < store3/ 50; i++)
+	{
+		cout << "*";
+	}
+	cout << endl;
+	for (int i = 1; i < store4/ 50; i++)
+	{
+		cout << "*";
+	}
+	cout << endl;
+	for (int i = 1; i < store5 / 50; i++)
+	{
+		cout << "*";
+	}
+	cout << endl;
+	return 0;
+}
+

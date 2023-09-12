@@ -1,0 +1,30 @@
+ Write a C++ program to find the nth Fibonacci number using recursion.
+ Implement a C++ program to sort an array of integers using the sort algorithm.
+ Write a C++ program to find the largest and smallest elements in an array.
+ Create a C++ program to reverse the order of words in a given sentence.
+ Implement a C++ program to calculate the power of a number using recursion.
+ Write a C++ program to count the number of vowels in a given string.
+ Create a C++ program to check if a given string is a palindrome or not.
+ Implement a C++ program to perform matrix multiplication of two square matrices.
+ Write a C++ program to find the median of an array of numbers.
+ Create a C++ program to generate all possible permutations of a given string.
+ Implement a C++ program to create a stack data structure using an array, with functions to push, pop, and display the elements.
+ Create a C++ program to implement a queue data structure using a linked list, with functions to enqueue, dequeue, and display the elements.
+ Implement a C++ program to create a binary search tree (BST) data structure, with functions insert  node, and perform an inorder traversal.
+ C++ program to implement a doubly linked list, with functions to insert a node at the beginning,or a specific position, delete a node,display the list.
+ C++ program to implement a hash table data structure using an array, with functions to insert, search, and delete elements using a hashing function.
+ C++ program to create a graph data structure using an adjacency matrix, with functions to add vertices, add edges, and perform a depth-first search (DFS).
+ Write a C++ program to implement a priority queue data structure using a binary heap, with functions to insert an element and extract the minimum element.
+ Create a C++ program to implement a trie data structure, with functions to insert a word, search for a word, and display all words in the trie.
+ Implement a C++ program to sort an array of integers using the quicksort algorithm, considering different pivot selection techniques and optimizations.
+ Write a C++ program to implement a red-black tree data structure, with functions to insert a node, delete a node, and perform an inorder traversal.
+ Write a Java program to find the sum of all numbers from 1 to n, where n is entered by the user.
+ Implement a Java program to check whether a given number is prime or not.
+ Create a Java program to reverse a given string without using any built-in functions.
+ Write a Java program to calculate the factorial of a given number using recursion.
+ Implement a Java program to sort an array of integers using the bubble sort algorithm.
+ Create a Java program to find the largest and smallest elements in an array.
+ Implement a Java program to perform matrix multiplication of two square matrices.
+ Write a Java program to count the number of occurrences of a given word in a string.
+ Create a Java program to check if a given string is a palindrome or not.
+ Implement a Java program to find the median of an array of numbers.
