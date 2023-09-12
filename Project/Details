@@ -1,2 +1,4 @@
-This repository contains a C++ (OOP) project that demonstrates a Consoled-Based-Classroom System.
+# This repository contains a C++ (OOP) project that demonstrates a Consoled-Based-Classroom System.
 It includes a header file (header.h),main (main.cpp), and text files for efficient file handling.
+MAIN implementation is included in main.cpp.
+CLASSES implementation is included in header.h.
