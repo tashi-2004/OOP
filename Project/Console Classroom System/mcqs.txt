@@ -1,0 +1,31 @@
+What exactly is CSS stand for? a) Cascading Style Sheets (CSS) b) Computer Style Sheets (CSS) c) Creative Style Sheets (CSS) d) Combined Style Sheets
+What programming language is used in web development? a) Java b) Python c) HTML d) C++
+In programming, what is the purpose of a conditional statement? a) run a block of code b) run a block of code c) To define a function d) declare variable 
+What is a programming loop? a)code that is only run b) code that is performed repeatedly c) A code section d) A code section that declares a variable
+What is the abbreviation for SQL? a) Standard Query Language b) Structured Query Language c) Simple Query Language  d) Scalable Query Language 
+Which of the following programming languages is often used to create mobile applications? a) HTML b) Python c) Swift d) PHP
+What exactly is a database management system? A) MySQL b) HTML c) CSS d) JavaScript
+In programming, what is the function of a variable? a)save a value for subsequent usage b) run a block of code c) run a piece of coded) define a function 
+Which of the following is a front-end programming language example? a) Python b) HTML c) Java d) Ruby
+What is the function of an API in programming? a)Allowing software systems b)data in a database c)a block of code d)that may be invoked later
+Which of the following is a back-end programming language? a) HTML b) CSS c) Ruby d) JavaScript Solution c) Ruby
+What is the function's purpose in programming? a)carry out activity b)store data in a database c)software systems to connect with one another d)define
+Which of the following is not a text editor? a) Visual Studio Code b) Photoshop c) Illustrator d) InDesign 
+What does a compiler do in programming? a)Converting human-readable code b)data in a database c)software systems to connect d) may be executed later
+Which of the following is a well-known JavaScript library? a) React b) Angular c) Vue.js d) All of the preceding
+Which of the following is a programming paradigm example? a) Object-oriented programming b) procedural programming c) functional programming d) all 
+Which of the following describes a web server? a) Apache b) MySQL c) MongoDB d) Redis
+What is function of a programming module? a)group together code b)store data in a database c)software systems to interact d)function invoked later.
+Which of the following is a type of version control system? a) Git b) MySQL c) MongoDB d) Redis
+What does a package manager do in programming? a)manage project dependencies b)store data in a database c)allow it d)execute block of code if true.
+Which of the following is a prominent Python web framework? a) Django b) Ruby on Rails d) Flask c) Express.js
+In OOP, what is the function of a constructor? a)Creating new class b)Executing a piece of code c)Repeating block of code d)function invoked later
+Which of the following is a popular front-end JavaScript framework? a) React b) Angular c) Vue.js d) Express.js.
+In programming, what is the function of a while loop? a) Repetition of code b) Execution of code c)function that can be called later d)Variable
+Which of the following is not a popular PHP web framework? a) Django c) Ruby on Rails c) Laravel d) The flask
+In programming,what is the function of a try-catch block? a)To deal with exceptions b)run a block of code c)define function d)declare variable utilized.
+Which of the following is an example of a widely used text editor for coding? a) Sublime Text b) Photoshop c) Illustrator d) InDesign
+In OOP, what is the purpose of a method? a)perform a specific job b)store data in a database c)enable various software systems d)declare a variable that
+Which of the following is a well-known back-end JavaScript framework? a) Angular b) React c) tVue.js e) Node.js
+In programming, what is the purpose of a data structure?a)Organize and store data b)Execute a code c)function called later d) variable that may be used.
+ 
